@@ -1,0 +1,19 @@
+12 257.0 1.938
+0 -1 2010-11-11T21:48:00
+I II III AVR AVL AVF V1 V2 V3 V4 V5 V6 
+1.938 1.938 1.938 1.938 1.938 1.938 1.938 1.938 1.938 1.938 1.938 1.938 
+µV µV µV µV µV µV µV µV µV µV µV µV 
+int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 
+tohead
+s:fam:Фамилия
+s:nam:Имя
+s:sub:Отчество
+s:sex:ж
+dt:Birth:1979-06-10T00:00:00
+l:hgh:165.0
+l:wgh:57.0
+l:monNum:149
+l:monTyp:16
+l:ProgID:2
+dt:Start:2010-11-11T21:48:00
+dt:HeadStart:2010-11-11T21:39:42

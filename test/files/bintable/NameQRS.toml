@@ -1,0 +1,113 @@
+tabletype = "segments"
+
+[timegrid]
+freq = 250
+timestart = 2013-02-13T13:16:00
+offset = 4615957
+
+[[field]]
+name = "timeQ"
+type = "int32"
+dstype = "timeindex"
+comment = "время точки Q"
+
+[[field]]
+name = "timeS"
+type = "int32"
+dstype = "timeindex"
+comment = "время точки S"
+
+[[field]]
+name = "width"
+type = "int32"
+dstype = "timeinterval"
+comment = "ширина QS"
+
+[[field]]
+name = "form_id"
+type = "uint32"
+dstype = "categories"
+comment = "код названия"
+	[field.dict]
+	A = 32778
+	A1 = 32781
+	A2 = 32782
+	A3 = 32783
+	AC = 32784
+	AL = 32780
+	AR = 32779
+	B = 32801
+	B1 = 32806
+	B2 = 32807
+	BC = 32808
+	BI = 32805
+	BL = 32804
+	BN = 32803
+	BR = 32802
+	C = 32787
+	CA = 32789
+	CB = 32792
+	CC = 32795
+	CD = 32794
+	CF = 32791
+	CS = 32788
+	CV = 32790
+	CW = 32793
+	EMPTY = 0
+	F = 32796
+	F1 = 32797
+	F2 = 32798
+	F3 = 32799
+	FC = 32800
+	Q = 32828
+	S = 32785
+	SC = 32786
+	U = 32823
+	UL = 32825
+	UN = 32824
+	UR = 32826
+	UV = 32827
+	V = 32769
+	V1 = 32772
+	V2 = 32773
+	V3 = 32774
+	V4 = 32775
+	V5 = 32776
+	VC = 32777
+	VL = 32771
+	VR = 32770
+	W = 32809
+	W1 = 32810
+	W2 = 32811
+	W3 = 32812
+	WC = 32813
+	X = 32820
+	XC = 32822
+	XZ = 32821
+	Z = 32814
+	Z1 = 32816
+	Z2 = 32817
+	Z3 = 32818
+	Z4 = 32819
+	ZX = 32815
+
+[[field]]
+name = "class_id"
+type = "int32"
+dstype = "magnitude"
+comment = "номер группы"
+
+[[field]]
+name = "diag"
+type = "int32"
+dstype = "magnitude"
+units = "log(P/(1-P))"
+comment = "достоверность по Вальду"
+
+[[field]]
+name = "RR"
+type = "int32"
+dstype = "magnitude"
+units = "ms"
+comment = "RR-интервал"
+

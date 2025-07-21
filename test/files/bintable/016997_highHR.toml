@@ -1,0 +1,59 @@
+tabletype = "signal"
+
+[timegrid]
+freq = 257.0
+timestart = 2013-12-10T10:40:00.000Z
+offset = 5465082
+
+[[field]]
+name = "L"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "F"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "C1"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "CL2"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "CF3"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "C4"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "CL5"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+[[field]]
+name = "CF6"
+dstype = "magnitude"
+type = "int32"
+units = "ÂµV"
+lsb = 0.9653
+
+[[restart]]
+start = 5465082
+stop = 5480501

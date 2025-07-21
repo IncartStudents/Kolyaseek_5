@@ -1,0 +1,15 @@
+7 257.0 0.9506
+0 -1 2008-05-30T14:07:00
+I OxyR OxyIr Breath Snore Reo SPOSoft 
+0.9506 1.0 1.0 0.4114 0.4114 0.3117 1.0 
+µV µV µV ?mHg ?mHg mOm %% 
+int32 int32 int32 int32 int32 int32 int32 
+tohead
+s:fam:noSurname
+s:nam:noName
+s:sub:noPatronymic
+l:ProgID:0
+l:Stimulus:1
+s:StimulusType:DDD 60
+dt:Start:1970-01-01T00:00:00
+dt:HeadStart:1970-01-01T00:00:00

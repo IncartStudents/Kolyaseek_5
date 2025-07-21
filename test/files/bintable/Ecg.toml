@@ -1,0 +1,12 @@
+tabletype = "signal"
+
+[timegrid]
+freq = 500
+timestart = 2000-01-01T00:00:00
+offset = 0
+
+[[field]]
+name = "_"
+type = "int32"
+dstype = "magnitude"
+

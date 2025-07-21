@@ -1,0 +1,17 @@
+﻿7 257 0.9506
+0	21206612 2008-05-30T14:07:00
+I	OxyR	OxyIr	Breath	Snore	Reo	SPOSoft
+0.9506	1.0000	1.0000	0.4114	0.4114	0.3117	1.0000	
+µV	µV	µV	?mHg	?mHg	mOm	%%
+tohead
+s:fam:Фамилия
+s:nam:Имя
+s:sub:Отчество
+s:sex:м
+dt:Birth:1970-02-08
+l:hgh:175
+l:wgh:127
+l:monNum:6
+l:monTyp:23
+l:ProgID:2
+dt:Start:2008-05-30T14:06:38

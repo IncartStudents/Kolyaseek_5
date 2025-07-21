@@ -1,0 +1,19 @@
+8 257.0 0.9653
+5465082 5480501 2013-12-10T10:40:00
+L F C1 CL2 CF3 C4 CL5 CF6 
+0.9653 0.9653 0.9653 0.9653 0.9653 0.9653 0.9653 0.9653 
+µV µV µV µV µV µV µV µV 
+int32 int32 int32 int32 int32 int32 int32 int32 
+tohead
+s:fam:Фамилия
+s:nam:Имя
+s:sub:Отчество
+s:sex:ж
+dt:Birth:1979-06-10
+l:hgh:165
+l:wgh:57
+l:monNum:149
+l:monTyp:16
+l:ProgID:2
+dt:Start:2013-12-10T10:40:00
+dt:HeadStart:2013-12-10T10:39:42

@@ -1,0 +1,98 @@
+tabletype = "segments"
+fmtversion = 2
+
+[timegrid]
+freq = 250
+timestart = 2013-02-13T13:16:00
+offset = 4615957
+
+[[field]]
+name = "result"
+type = "uint32"
+units = "discard_qrs"
+comment = "причина браковки"
+	[field.bitmasks]
+	all_bad_channels = 20
+	bad_channel = 3
+	bnd_manyfronts = 10
+	bnd_maxwidth = 12
+	bnd_minwidth = 13
+	bnd_nofronts = 7
+	bnd_out_of_anchor = 9
+	bnd_relamp12 = 8
+	bnd_snr = 11
+	enbnd_lowdrop = 5
+	enbnd_maxwidth = 6
+	enbnd_nomax = 4
+	excluded = 1
+	good = 0
+	is_Z = 21
+	lowdiag_ch = 15
+	lowdiag_m = 19
+	next_intersect = 17
+	out_of_center = 18
+	prev_intersect = 16
+	start_edge = 2
+	zero_amp = 14
+
+
+[[field]]
+name = "timeQ"
+type = "int32"
+units = "timeindex"
+comment = "время точки Q"
+
+[[field]]
+name = "timeS"
+type = "int32"
+units = "timeindex"
+comment = "время точки S"
+
+[[field]]
+name = "timePeak"
+type = "int32"
+units = "timeindex"
+comment = "точка первичного пика"
+
+[[field]]
+name = "amplBind"
+type = "int32"
+units = "µV"
+lsb = 1.1779 # magnitude encoding
+comment = "амплитуда макс. фронта"
+
+[[field]]
+name = "amplRange"
+type = "int32"
+units = "µV"
+lsb = 1.1779 # magnitude encoding
+comment = "амплитуда по сырому сигналу"
+
+[[field]]
+name = "curveLen"
+type = "int32"
+units = "µV"
+lsb = 1.1779 # magnitude encoding
+comment = "длина линии сигнала (сумма модулей производной)"
+
+[[field]]
+name = "deltaQS"
+type = "int32"
+units = "µV"
+lsb = 1.1779 # magnitude encoding
+comment = "перепад амплитуды на границых QS"
+
+[[field]]
+name = "noiseLvl"
+type = "int32"
+units = "µV"
+lsb = 1.1779 # magnitude encoding
+comment = "абс. уровень шума"
+
+[[field]]
+name = "meanSgnLvl"
+type = "int32"
+units = "µV"
+lsb = 1.1779 # magnitude encoding
+comment = "медианный уровень QRS в канале"
+

@@ -1,0 +1,140 @@
+tabletype = "segments"
+
+[timegrid]
+freq = 250
+timestart = 2018-02-26T12:05:00
+offset = 0
+
+[[field]]
+name = "result"
+type = "uint32"
+dstype = "categories"
+comment = "причина браковки"
+	[field.dict]
+	all_bad_channels = 21
+	bad_channel = 3
+	bnd_manyfronts = 10
+	bnd_maxwidth = 12
+	bnd_minwidth = 13
+	bnd_nofronts = 7
+	bnd_out_of_anchor = 9
+	bnd_relamp12 = 8
+	bnd_snr = 11
+	enbnd_lowdrop = 5
+	enbnd_maxwidth = 6
+	enbnd_nomax = 4
+	excluded = 1
+	good = 0
+	is_Z = 22
+	low_ampl_front = 14
+	lowdiag_ch = 16
+	lowdiag_m = 20
+	next_intersect = 18
+	out_of_center = 19
+	prev_intersect = 17
+	start_edge = 2
+	zero_amp = 15
+
+[[field]]
+name = "timeQ"
+type = "int32"
+dstype = "timeindex"
+comment = "время точки Q"
+
+[[field]]
+name = "timeS"
+type = "int32"
+dstype = "timeindex"
+comment = "время точки S"
+
+[[field]]
+name = "diag"
+type = "int32"
+dstype = "magnitude"
+units = "log(P/(1-P))"
+comment = "достоверность по Вальду"
+
+[[field]]
+name = "detectmask"
+type = "uint32"
+dstype = "binaryset"
+comment = "маска детекций в каналах"
+
+[[field]]
+name = "excludemask"
+type = "uint32"
+dstype = "binaryset"
+comment = "маска исключенных каналов"
+
+[[field]]
+name = "noiseCh0"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 0"
+
+[[field]]
+name = "noiseCh1"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 1"
+
+[[field]]
+name = "noiseCh2"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 2"
+
+[[field]]
+name = "noiseCh3"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 3"
+
+[[field]]
+name = "noiseCh4"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 4"
+
+[[field]]
+name = "noiseCh5"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 5"
+
+[[field]]
+name = "noiseCh6"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 6"
+
+[[field]]
+name = "noiseCh7"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 7"
+
+[[field]]
+name = "noiseCh8"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 8"
+
+[[field]]
+name = "noiseCh9"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 9"
+
+[[field]]
+name = "noiseCh10"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 10"
+
+[[field]]
+name = "noiseCh11"
+type = "int32"
+dstype = "magnitude"
+units = "уровень шума в канале 11"
+

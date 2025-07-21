@@ -1,0 +1,69 @@
+tabletype = "segments"
+fmtversion = 2
+
+[timegrid]
+freq = 250.0
+timestart = 2013-02-13T13:16:00.000Z
+offset = 4615957
+
+[[field]]
+name = "result"
+type = "int32"
+units = "units"
+
+    [field.names]
+    good = 1
+[[field]]
+name = "timeQ"
+type = "int32"
+units = "timeindex"
+[[field]]
+name = "timeS"
+type = "int32"
+units = "timeindex"
+[[field]]
+name = "timePeak"
+type = "int32"
+units = "timeindex"
+[[field]]
+name = "amplBind"
+type = "int32"
+units = "µV"
+lsb = 1.0
+offset = 0
+minmax = [-2.147483648e9, 2.147483647e9]
+[[field]]
+name = "amplRange"
+type = "int32"
+units = "µV"
+lsb = 1.0
+offset = 0
+minmax = [-2.147483648e9, 2.147483647e9]
+[[field]]
+name = "curveLen"
+type = "int32"
+units = "µV"
+lsb = 1.0
+offset = 0
+minmax = [-2.147483648e9, 2.147483647e9]
+[[field]]
+name = "deltaQS"
+type = "int32"
+units = "µV"
+lsb = 1.0
+offset = 0
+minmax = [-2.147483648e9, 2.147483647e9]
+[[field]]
+name = "noiseLvl"
+type = "int32"
+units = "µV"
+lsb = 1.0
+offset = 0
+minmax = [-2.147483648e9, 2.147483647e9]
+[[field]]
+name = "meanSgnLvl"
+type = "int32"
+units = "µV"
+lsb = 1.0
+offset = 0
+minmax = [-2.147483648e9, 2.147483647e9]

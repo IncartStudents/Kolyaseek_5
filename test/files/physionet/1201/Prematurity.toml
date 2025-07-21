@@ -1,0 +1,60 @@
+tabletype = "events"
+
+[timegrid]
+freq = 250
+timestart = 2000-01-01T00:00:00
+offset = 0
+
+[[field]]
+name = "timeQ"
+type = "int32"
+dstype = "timeindex"
+comment = "точка Q комплекса"
+
+[[field]]
+name = "type"
+type = "uint32"
+dstype = "categories"
+comment = "флаг преждевременности"
+	[field.dict]
+	_Q = 39
+	_VBigeminy = 33
+	_VEBformChange = 38
+	_VTrigeminy = 34
+	_arNoRR = 9
+	_arNonQRS = 8
+	_bA = 23
+	_bB = 20
+	_bE = 24
+	_bS = 22
+	_bV = 21
+	_fB = 36
+	_fN = 35
+	_fT = 37
+	_gB = 30
+	_gN = 29
+	_gR = 32
+	_gT = 31
+	_nD = 25
+	_nFirstInDGP = 28
+	_nG = 26
+	_nP = 27
+	_pE1 = 15
+	_pE2 = 16
+	_pE3 = 17
+	_pE4 = 18
+	_pE5 = 19
+	_pEU = 12
+	_pN = 10
+	_pP = 11
+	_pPl = 14
+	_pPr = 13
+	_pcF = 6
+	_pcS = 4
+	_pcU = 7
+	_pcV = 5
+	_rF = 3
+	_raM = 1
+	_raS = 0
+	_raV = 2
+

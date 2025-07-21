@@ -1,0 +1,7 @@
+10 250 0 int32 
+4615957 -1 2013-02-13T13:16:00
+result timeQ timeS timePeak amplBind amplRange curveLen deltaQS noiseLvl meanSgnLvl
+1 1 1 1.1779 1.1779 1.1779 1.1779 1.1779 1.1779 1.1779
+index mS mS µV µV µV µV µV µV µV
+unt32 int32 int32 int32 int32 int32 int32 int32 int32 int32
+#

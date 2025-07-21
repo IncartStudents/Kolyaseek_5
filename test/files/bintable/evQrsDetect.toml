@@ -1,0 +1,39 @@
+tabletype = "events"
+
+[timegrid]
+freq = 257
+timestart = "2009-09-07T13:02:00"
+offset = 0
+
+[[field]]
+name = "time"
+type = "int32"
+dstype = "timeindex"
+
+[[field]]
+name = "ampl"
+type = "int32"
+dstype = "magnitude"
+units = "µV"
+lsb = 0.9407
+offset = 0
+minmax = [-2147483648, 2147483647]
+
+[[field]]
+name = "noise"
+type = "int32"
+dstype = "magnitude"
+units = "µV"
+lsb = 0.9407
+offset = 0
+minmax = [-2147483648, 2147483647]
+
+[[field]]
+name = "lvz"
+type = "int32"
+dstype = "magnitude"
+units = "µV"
+lsb = 0.9407
+offset = 0
+minmax = [-2147483648, 2147483647]
+
