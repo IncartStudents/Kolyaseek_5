@@ -14,7 +14,7 @@ FileUtils = "61402b12-eb4b-4f0c-a04f-adfcfe5d14e4"
 IBoxAccess = "1607262a-405a-4f9a-89bc-45a61e12db11"
 Interpolations = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
-MkpVerifyGUI = "2f70d059-0181-42ae-ba8a-27dad0c9d557"
+#MkpVerifyGUI = "2f70d059-0181-42ae-ba8a-27dad0c9d557"
 StdEcgAlgs = "6ef0ac17-32ce-46b5-97ab-44dd01c94670"
 TimeSamplings = "ed45db17-24e9-469d-8275-17d3d36e28e6"
 wfdb_wrapper_jll = "cfa65b43-6878-5963-b59c-e7edc60d5dc9"
@@ -26,7 +26,7 @@ ExtractMkp = {url = "https://github.com/IncartStudents/ExtractMkp.jl"}
 FileUnv_jll = {url = "https://github.com/a-mikhaylov/FileUnv_jll.jl.git"}
 FileUtils = {url = "https://github.com/IncartStudents/FileUtils.jl"}
 IBoxAccess = {url = "https://github.com/IncartStudents/IBoxAccess.jl"}
-MkpVerifyGUI = {url = "https://github.com/IncartStudents/MkpVerifyGUI.jl"}
+#MkpVerifyGUI = {url = "https://github.com/IncartStudents/MkpVerifyGUI.jl"}
 StdEcgAlgs = {url = "https://github.com/IncartStudents/StdEcgAlgs.jl"}
 TimeSamplings = {url = "https://github.com/IncartStudents/TimeSamplings.jl"}
 wfdb_wrapper_jll = {url = "https://github.com/sairus7/wfdb_wrapper_jll.jl.git"}

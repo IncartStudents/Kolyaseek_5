@@ -11,9 +11,9 @@ datpath = joinpath(@__DIR__, "files/datfiles/MX22130213131241.dat")
 # datpath = raw"Y:\yura\Data\MX22130213131241.dat"
 datpath = raw"C:\Users\gvg\binECG\temp\MX22130213131241.dat"
 =#
-datpath = joinpath(@__DIR__,"/home/kolyaseek/ChildArithm.dat")
+datpath = joinpath(@__DIR__,"/home/kolyaseek/TEST/Kolyaseek_5/MX22130213131241.dat")
 
-datpath = raw"/home/kolyaseek/TEST/ChildArithm.dat"
+#datpath = raw"/home/kolyaseek/TEST/ChildArithm.dat"
 
 h = FileUtils.readdatheader(datpath);
 

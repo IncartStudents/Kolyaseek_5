@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings Language="ru">
+	<UserDiary>
+		<Type Value = "Боль" ID = "10" Name = "Sensation,Diary:Text">
+			<Event Value = "Боль за грудиной" ID = "11" Duration = "10" Tag = "P.B" Text = "Боль за грудиной"/>
+			<Event Value = "Сердцебиение (Пульсация)" ID = "12" Duration = "10" Tag = "F" Text = "Сердцебиение (Пульсация)"/>
+			<Event Value = "Перебои (Аритмия)" ID = "13" Duration = "10" Tag = "H" Text = "Перебои (аритмия)"/>
+			<Event Value = "Одышка" ID = "14" Duration = "10" Tag = "B" Text = "Одышка"/>
+			<Event Value = "Слабость (Обморок)" ID = "15" Duration = "10" Tag = "W" Text = "Слабость (Обморок)"/>
+			<Event Value = "Вертикальное положение" ID = "84" Name = "Diary:Text" Duration = "1" Tag = "V" Text = "Вертикальное положение"/>
+		</Type>
+		<Type Value = "Нагрузка" ID = "20" Name = "Activity">
+			<Type Value = "Подъём по лестнице" ID = "21">
+				<Event Value = "Начало" ID = "22"  Beg = "1" Duration = "10" Tag = "D.A.L"/>
+				<Event Value = "Конец" ID = "23"   End = "1"/>
+				<Event Value = "Конец &lt;" ID = "24" End = "1" Tag = "D.A.L" Hint = "0"/>
+				<Event Value = "Конец 1" ID = "25" End = "1" Tag = "D.A.L" Hint = "20"/>
+				<Event Value = "Конец 2" ID = "26" End = "1" Tag = "D.A.L" Hint = "40"/>
+				<Event Value = "Конец 3" ID = "27" End = "1" Tag = "D.A.L" Hint = "60"/>
+				<Event Value = "Конец 4" ID = "28" End = "1" Tag = "D.A.L" Hint = "80"/>
+				<Event Value = "Конец 5" ID = "29" End = "1" Tag = "D.A.L" Hint = "100"/>
+				<Event Value = "Конец 6" ID = "30" End = "1" Tag = "D.A.L" Hint = "120"/>
+				<Event Value = "Конец 7" ID = "31" End = "1" Tag = "D.A.L" Hint = "140"/>
+				<Event Value = "Конец 8" ID = "32" End = "1" Tag = "D.A.L" Hint = "160"/>
+				<Event Value = "Конец &gt;" ID = "33" End = "1" Tag = "D.A.L" Hint = "180"/>
+			</Type>
+			<Type Value = "Ходьба" ID = "34">
+				<Event Value = "Начало" ID = "35"  Beg = "1" Duration = "10" Tag = "D.A.S"/>
+				<Event Value = "Конец" ID = "36"   End = "1" Tag = "D.A.S"/>
+			</Type>
+			<Type Value = "Активность (Зарядка)" ID = "37">
+				<Event Value = "Начало" ID = "38"  Beg = "1" Duration = "10" Tag = "D.A.E"/>
+				<Event Value = "Конец" ID = "39"   End = "1" Tag = "D.A.E"/>
+			</Type>
+			<Type Value = "Другая физическая нагрузка (Работа)" ID = "40">
+				<Event Value = "Начало" ID = "41"  Beg = "1" Duration = "10" Tag = "D.A.O"/>
+				<Event Value = "Конец" ID = "42"   End = "1" Tag = "D.A.O"/>
+			</Type>
+			<Type Value = "Эмоции" ID = "43">
+				<Event Value = "Начало" ID = "44"  Beg = "1" Duration = "10" Tag = "D.E"/>
+				<Event Value = "Конец" ID = "45"   End = "1" Tag = "D.E"/>
+			</Type>
+			<Type Value = "Глубокое дыхание" ID = "78">
+				<Event Value = "Начало" ID = "79"  Beg = "1" Duration = "-1" Tag = "D.T.B"/>
+				<Event Value = "Конец" ID = "80"   End = "1" Tag = "D.T.B"/>
+			</Type>
+			<Type Value = "Проба Вальсальвы (Натуживание)" ID = "85">
+				<Event Value = "Начало" ID = "86"  Beg = "1" Duration = "-1" Tag = "D.T.W"/>
+				<Event Value = "Конец" ID = "87"   End = "1" Tag = "D.T.W"/>
+			</Type>
+			<Type Value = "Изометрическая нагрузка (Жим)" ID = "88">
+				<Event Value = "Начало" ID = "89"  Beg = "1" Duration = "-1" Tag = "D.T.I"/>
+				<Event Value = "Конец" ID = "90"   End = "1" Tag = "D.T.I"/>
+			</Type>
+			<Type Value = "Активный ортостаз" ID = "91">
+				<Event Value = "Начало" ID = "92"  Beg = "1" Duration = "-1" Tag = "D.T.A"/>
+				<Event Value = "Конец" ID = "93"   End = "1" Tag = "D.T.A"/>
+			</Type>
+		</Type>
+		<Type Value = "Лекарства" ID = "46" Name = "Activity">
+			<Event Value = "Начало" ID = "47"  Beg = "1" Duration = "10" Tag = "D.M"/>
+			<Event Value = "Конец" ID = "48"   End = "1" Tag = "D.M"/>
+		</Type>
+		<Type Value = "Сон" ID = "49" Name = "Sleep">
+			<Event Value = "Начало" ID = "50"  Beg = "1" Duration = "600" Tag = "Sleep"/>
+			<Event Value = "Конец" ID = "51"   End = "1" Tag = "Sleep"/>
+		</Type>
+		<Type Value = "Физиологические «моменты»" ID = "52" Name = "Activity">
+			<Type Value = "Еда" ID = "53">
+				<Event Value = "Начало" ID = "54"  Beg = "1" Duration = "10" Tag = "D.F.E"/>
+				<Event Value = "Конец" ID = "55"   End = "1" Tag = "D.F.E"/>
+			</Type>
+			<Type Value = "Алкоголь" ID = "56">
+				<Event Value = "Начало" ID = "57"  Beg = "1" Duration = "10" Tag = "D.F.A"/>
+				<Event Value = "Конец" ID = "58"   End = "1" Tag = "D.F.A"/>
+			</Type>
+			<Type Value = "Курение" ID = "59">
+				<Event Value = "Начало" ID = "60"  Beg = "1" Duration = "10" Tag = "D.F.S"/>
+				<Event Value = "Конец" ID = "61"   End = "1" Tag = "D.F.S"/>
+			</Type>
+			<Type Value = "Секс" ID = "62">
+				<Event Value = "Начало" ID = "63"  Beg = "1" Duration = "10" Tag = "D.F.X"/>
+				<Event Value = "Конец" ID = "64"   End = "1" Tag = "D.F.X"/>
+			</Type>
+		</Type>
+	</UserDiary>
+</Settings>

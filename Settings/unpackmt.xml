@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings Language="ru">
+  <TypesCnl>
+    <tcECG Value="0" Name="ECG"/>
+    <tcAxs Value="1" Name="Axs"/>
+    <tcAxsExt Value="2" Name="AxsExt"/>
+    <tcReo Value="3" Name="Reo"/>
+    <tcApt Value="5" Name="Apt"/>
+    <tcOxy Value="6" Name="Oxy"/>
+    <tcPrs Value="7" Name="Prs"/>
+    <tcTon Value="8" Name="Ton"/>
+  </TypesCnl>
+  
+  <Calibration ver="1">
+    <Channal Value="tcECG" Lab = "µV" Unit="1000">
+      <Point0 Value = "0"/>
+      <Point1 Value = "10000"/>
+    </Channal>
+    <Channal Value="tcAxs" Lab = "mg" Unit="1000">		
+      <Point0 Value = "0"/>
+      <Point1 Value = "1000"/>
+    </Channal>
+    <Channal Value="tcAxsExt" Lab = "mg" Unit="1000">
+      <Point0 Value = "0"/>
+      <Point1 Value = "1000"/>
+    </Channal>
+    <Channal Value="tcReo" Lab = "mOm" Unit="1000">			
+      <Point0 Value = "0"/>
+      <Point1 Value = "2000000000"/>
+    </Channal>
+    <Channal Value="tcApt" Lab = "µOm" Unit="1000">				
+      <Point0 Value = "0"/>
+      <Point1 Value = "100000"/>
+    </Channal>
+    <Channal Value="tcOxy" Lab = "k" Unit="1000">				
+    </Channal>
+    <Channal Value="tcPrs" Lab = "mmHg" Unit="1000">				
+      <Point0 Value = "0"/>
+      <Point1 Value = "30"/>
+      <Point Value = "60"/> 
+      <Point Value = "90"/> 
+      <Point Value = "120"/> 
+      <Point Value = "150"/> 
+      <Point Value = "180"/> 
+      <Point Value = "210"/> 
+      <Point Value = "240"/> 
+      <Point Value = "270"/> 
+      <Point Value = "300"/>
+    </Channal>	
+    <Channal Value="tcTon" Lab = "µV" Unit="1000">				
+    </Channal>
+  </Calibration>
+  
+  <Unpack IDFMT="2" Info="КТ-New" Define="New_File">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4M"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="III"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6M"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+	<Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4M"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="III"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6M"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+  </Unpack>
+  
+  <Unpack IDFMT="3" Info="КТ-New" Define="New_File">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="LF"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="FR"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1L"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C2F" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C3R" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4L"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C5R" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C6R" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+    </Freq>
+	<Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="LF"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="FR"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1L"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C2F" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C3R" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4L"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C5R" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C6R" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="257" Info="КТ-New" Define="ЭКГ 1 канал">
+	<Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="ECG0"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="259" Info="КТ-New" Define="ЭКГ 3 каналa 3x5">
+	<Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="ECG0"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="ECG1"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="ECG2" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+  </Unpack>
+  <Unpack IDFMT="260" Info="КТ-New" Define="ЭКГ 3 каналa 3x7">
+	<Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="ECG0"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="ECG0"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="ECG0" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+  </Unpack>
+  <Unpack IDFMT="264" Info="КТ-New" Define="ЭКГ 8 каналов">
+	<Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="LR"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="FR"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1R"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C2L" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C3F" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4R"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C5L" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C6F" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="80" Info="КТ-New" Define="New_File">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+    </Freq>
+      <Channels Count="1" DivFreq="1" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="513" Info="КТ-New" Define="Reo 1 канал">
+      <Channels Count="1" DivFreq="1" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="514" Info="КТ-New" Define="Reo 2 канала">
+    <Channels Count="2" DivFreq="1" Mask="2" flAsynchr="False" Type="tcReo">
+      <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+    </Channels>
+  </Unpack>
+
+
+  <Unpack IDFMT="81" Info="КТ-New" Define="New_File">
+    <Freq Value="250">
+      <Channels Count="2" DivFreq="1" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+    </Freq>
+      <Channels Count="2" DivFreq="1" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+  </Unpack>
+
+  
+  <Unpack IDFMT="98" Info="КТ-New" Define="New_File">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="771" Info="КТ-New" Define="Move 3 канала">
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+  </Unpack>
+  
+  <Unpack IDFMT="1027" Info="КТ-New" Define="Внешнее движение 3 канала">
+      <Channels Count="3"  flAsynchr="False" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="1281" Info="КТ-New" Define="Давление 1 канал">
+      <Channels Count="1"  flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>
+  </Unpack>
+  
+  <Unpack IDFMT="1537" Info="КТ-New" Define="Тоны короткова 1 канал">
+      <Channels Count="1"  flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="1794" Info="КТ-New" Define="New_File">
+      <Channels Count="2"  flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+  </Unpack>
+
+  <Unpack IDFMT="1795" Info="КТ-New" Define="OxyIr, OxyR, OxySh (Темновой)">
+      <Channels Count="3"  flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="OxySh" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+  </Unpack>
+  
+  <Unpack IDFMT="2049" Info="КТ-New" Define="Дыхание+храп">
+      <Channels Count="1"  flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+  </Unpack>
+ 
+</Settings>

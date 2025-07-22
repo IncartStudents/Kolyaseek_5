@@ -1,0 +1,1213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings Language="ru">
+  <TypesCnl>
+    <tcECG Value="0" Name="ECG"/>
+    <tcAxs Value="1" Name="Axs"/>
+    <tcAxsExt Value="2" Name="AxsExt"/>
+    <tcReo Value="3" Name="Reo"/>
+    <tcApt Value="5" Name="Apt"/>
+    <tcOxy Value="6" Name="Oxy"/>
+    <tcPrs Value="7" Name="Prs"/>
+    <tcTon Value="8" Name="Ton"/>
+	<tcPVV  Value="9" Name="PVV"/>
+	<tcFP Value="10" Name="FP"/>
+	<tcFPM Value="11" Name="FPM"/>
+	<tcFPAdd Value="12" Name="FPAdd"/>
+
+  </TypesCnl>
+  
+  <Calibration ver="1">
+    <Channal Value="tcECG" Lab = "µV" Unit="1000">
+      <Point0 Value = "0"/>
+      <Point1 Value = "10000"/>
+    </Channal>
+    <Channal Value="tcAxs" Lab = "mg" Unit="1000">		
+      <Point0 Value = "0"/>
+      <Point1 Value = "1000"/>
+    </Channal>
+    <Channal Value="tcAxsExt" Lab = "mg" Unit="1000">
+      <Point0 Value = "0"/>
+      <Point1 Value = "1000"/>
+    </Channal>
+    <Channal Value="tcReo" Lab = "mOm" Unit="1000">			
+      <Point0 Value = "0"/>
+      <Point1 Value = "2000000000"/>
+    </Channal>
+    <Channal Value="tcApt" Lab = "µOm" Unit="1000">				
+      <Point0 Value = "0"/>
+      <Point1 Value = "100000"/>
+    </Channal>
+    <Channal Value="tcOxy" Lab = "k" Unit="1000">				
+    </Channal>
+    <Channal Value="tcPrs" Lab = "mmHg" Unit="1000">				
+      <Point0 Value = "0"/>
+      <Point1 Value = "30"/>
+      <Point Value = "60"/> 
+      <Point Value = "90"/> 
+      <Point Value = "120"/> 
+      <Point Value = "150"/> 
+      <Point Value = "180"/> 
+      <Point Value = "210"/> 
+      <Point Value = "240"/> 
+      <Point Value = "270"/> 
+      <Point Value = "300"/>
+    </Channal>	
+    <Channal Value="tcTon" Lab = "µV" Unit="1000">				
+    </Channal>
+  </Calibration>
+  
+  <Unpack IDFMT="1" Info="КТ-07-3/12" Define="MON8_250HZ_8CH_2REO_3AXS 0x0001">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="2" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="5" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+  <Unpack IDFMT="3" Info="КТ-07-3/12" Define="MON8_1000HZ_8CH_2REO_3AXS 0x0003">
+    <Freq Value="1000">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="2" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="18" Info="КТ-07-3/12" Define="MON8_1000HZ_3CH_2REO_3AXS 0x0012">
+    <Freq Value="1000">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2" 		Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="16" Info="КТ-07-3/12" Define="MON8_250HZ_3CH_2REO_3AXS 0x0010">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="5" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+  <Unpack IDFMT="32" Info="КТ-07-3/12" Define="MON8_250HZ_1CH_2REO_3AXS 0x0020">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4" 	Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+        <Channels Count="2" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="5" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+  <Unpack IDFMT="34" Info="КТ-07-3/12" Define="MON8_1000HZ_1CH_2REO_3AXS 0x0022">
+    <Freq Value="1000">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4" 	Tag="ECG0" 	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="13" Info="КТ-07-АД-3/12Р" Define="ALL8_250HZ_8CH_3REO_3AXS 0x000d">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+
+  </Unpack>
+  <Unpack IDFMT="15" Info="КТ-07-АД-3/12Р" Define="ALL8_1000HZ_8CH_3REO_3AXS 0x000f">
+  <Freq Value="1000">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="4" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="4" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="29" Info="КТ-07-АД-3/12Р" Define="ALL8_250HZ_3CH_3REO_3AXS 0x001d">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="31" Info="КТ-07-АД-3/12Р" Define="ALL8_1000HZ_3CH_3REO_3AXS 0x001F">
+    <Freq Value="1000">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="4" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="4" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="40" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="45" Info="КТ-07-АД-3/12Р" Define="ALL8_250HZ_1CH_3REO_3AXS 0x002d">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="47" Info="КТ-07-АД-3/12Р" Define="ALL8_1000HZ_1CH_3REO_3AXS 0x002f">
+    <Freq Value="1000">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="4" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="4" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="40" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="14" Info="КТ-07-АД-3/12Р" Define="ALL8_250HZ_8CH_3REO_PERE 0x000e">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcECGP">
+        <Channel Tag="EcgP0" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="EcgP1" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="30" Info="КТ-07-АД-3/12Р" Define="ALL8_250HZ_3CH_3REO_PERE 0x001e">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcECGP">
+        <Channel Tag="EcgP0" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="EcgP1" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="10" Info="КТ-07-АД3" Define="AD3_250HZ_8CH_2REO_3AXS 0x000A">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="2" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="12" Info="КТ-07-АД3" Define="AD3_1000HZ_8CH_2REO_3AXS 0x000C">
+    <Freq Value="1000">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="2" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="20" Info="КТ-07-АД3" Define="AD3_250HZ_3CH_2REO_3AXS 0x0014">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+
+  <Unpack IDFMT="24" Info="КТ-07-АД3" Define="AD3_1000HZ_3CH_2REO_3AXS 0x0018">
+    <Freq Value="1000">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+  
+  <Unpack IDFMT="19" Info="КТ-07-3/12Р" Define="OXY_250HZ_8CH_3REO_2OXY 0x0013">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="21" Info="КТ-07-3/12Р" Define="OXY_250HZ_3CH_3REO_2OXY 0x0015">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="23" Info="КТ-07-3/12Р" Define="OXY_250HZ_1CH_3REO_2OXY 0x0017">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V5M"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="25" Info="КТ-07-3/12Р" Define="OXY_1000HZ_8CH_3REO_2OXY 0x0019">
+    <Freq Value="1000">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="4" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="4" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="26" Info="КТ-07-3/12Р" Define="OXY_1000HZ_3CH_3REO_2OXY 0x001a">
+    <Freq Value="1000">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="4" Mask="1" flAsynchr="False" Type="tcApt">
+        <Channel Tag="APT" Amp="1000" Div="1000" Lab="µmHO"/>
+      </Channels>
+      <Channels Count="2" DivFreq="4" Mask="1" flAsynchr="False" Type="tcOxy">
+        <Channel Tag="OxyIr" Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Tag="OxyR" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="17" Info="КТ07-3" Define="MON3_250HZ_3CH_1REO_3AXS 0x0011">
+    <Freq Value="250">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+  <Unpack IDFMT="27" Info="КТ07-3" Define="MON3_1000HZ_3CH_1REO_3AXS 0x001B">
+    <Freq Value="1000">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+  
+    <Unpack IDFMT="36" Info="КТ-07-АД-1" Define="AD1_250HZ_1CH_0REO_3AXS 0x0024">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V5M"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+  
+  <Unpack IDFMT="37" Info="КТ-07-АД-3" Define="AD3_250HZ_1CH_2REO_3AXS 0x0025">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V5M"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo1" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+
+  <Unpack IDFMT="39" Info="КТ-07-АД-3" Define="AD3_1000HZ_1CH_2REO_3AXS 0x0027">
+    <Freq Value="1000">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="2" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo1" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="40" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+  <Unpack IDFMT="40" Info="КТ-07-АД-1" Define="AD1_1000HZ_1CH_0REO_3AXS 0x0028">
+    <Freq Value="1000">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="40" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="49" Info="КТ-САКР-И" Define="ALL8_1000HZ_8CH_3REO_3AXS_FP 0x000f">
+	<Freq Value="1000">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="L"   Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="F"   Tag="ECG1"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1"  Tag="ECG2"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL2" Tag="ECG3"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF3" Tag="ECG4"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4"  Tag="ECG5"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CL5" Tag="ECG6"  Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="CF6" Tag="ECG7"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>  
+	  <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcPVV">
+        <Channel Tag="Ir" Amp="1000" Div="1000" Lab="µV"/>
+		<Channel Tag="Red" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+	  <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+	  <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFP">
+        <Channel Tag="FPrs" Amp="1000" Div="1000" Lab="mmHg"/>
+		<Channel Tag="FPrsNorm" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>	  
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFPAdd">
+		<Channel Tag="FPrsAdd" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFPM">
+        <Channel Tag="FMode" Amp="1" Div="1" Lab=""/>
+      </Channels> 
+	  <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+	  <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="41" Info="КТ-07-3" Define="MON8_250HZ_6CH_1REO_3AXS 0x0029">
+    <Freq Value="250">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="LR"   	Tag="ECG0" 		Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="FR"   	Tag="ECG1" 		Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1R"  	Tag="ECG2" 		Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C2L" 		Tag="ECG3"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="empty0" 	Tag="empty0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4L"  	Tag="ECG4"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="empty1" 	Tag="empty1"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C6F" 		Tag="ECG5"   	Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="8" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+  <Unpack IDFMT="42" Info="КТ-07-3" Define="MON8_1000HZ_6CH_1REO_3AXS 0x002a">
+    <Freq Value="1000">
+      <Channels Count="8" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="LR"   	Tag="ECG0" 		Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="FR"   	Tag="ECG1" 		Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C1R"  	Tag="ECG2" 		Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C2L" 		Tag="ECG3"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="empty0" 	Tag="empty0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C4L"  	Tag="ECG4"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="empty1" 	Tag="empty1"  	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="C6F" 		Tag="ECG5"   	Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>
+      <Channels Count="1" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack> 
+
+    <Unpack IDFMT="43" Info="КТ-07-АД-1" Define="AD1_250HZ_1CH_1REO_3AXS 0x002B">
+    <Freq Value="250">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V5M"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+
+	  
+    </Freq>
+  </Unpack>
+
+    <Unpack IDFMT="44" Info="КТ-07-АД-1" Define="AD1_1000HZ_1CH_1REO_3AXS 0x002C">
+    <Freq Value="1000">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V5M"	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+      <Channels Count="1" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="8" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="3" DivFreq="10" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+
+	  
+    </Freq>
+  </Unpack>
+
+  <Unpack IDFMT="50" Info="КТ-САКР-И" Define="ALL8_1000HZ_3CH_3REO_3AXS_FP 0x000f">
+	<Freq Value="1000">
+      <Channels Count="3" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V4"  	Tag="ECG0"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="Y"  	Tag="ECG1"	Amp="1000" Div="1000" Lab="µV"/>
+        <Channel Des="V6" 	Tag="ECG2"	Amp="1000" Div="1000" Lab="µV"/>
+      </Channels> 
+	  <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcPVV">
+        <Channel Tag="Ir" Amp="1000" Div="1000" Lab="µV"/>
+		<Channel Tag="Red" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+	  <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+	  <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFP">
+        <Channel Tag="FPrs" Amp="1000" Div="1000" Lab="mmHg"/>
+		<Channel Tag="FPrsNorm" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>	  
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFPAdd">
+		<Channel Tag="FPrsAdd" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFPM">
+        <Channel Tag="FMode" Amp="1" Div="1" Lab=""/>
+      </Channels> 
+	  <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+	  <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+    <Unpack IDFMT="51" Info="КТ-САКР-И" Define="ALL8_1000HZ_1CH_3REO_3AXS_FP 0x000f">
+	<Freq Value="1000">
+      <Channels Count="1" DivFreq="1" Mask="128" flAsynchr="True" Type="tcECG">
+        <Channel Des="V5M" Tag="ECG0"  Amp="1000" Div="1000" Lab="µV"/>		
+      </Channels>  
+	  <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcPVV">
+        <Channel Tag="Ir" Amp="1000" Div="1000" Lab="µV"/>
+		<Channel Tag="Red" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+	  <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcPrs">
+        <Channel Tag="Pres" Amp="30000" Div="30" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="8" flAsynchr="False" Type="tcTon">
+        <Channel Tag="Tone" Amp="1000" Div="1000" Lab="µV"/>
+      </Channels>
+	  <Channels Count="2" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFP">
+        <Channel Tag="FPrs" Amp="1000" Div="1000" Lab="mmHg"/>
+		<Channel Tag="FPrsNorm" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>	  
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFPAdd">
+		<Channel Tag="FPrsAdd" Amp="1000" Div="1000" Lab="mmHg"/>
+      </Channels>
+      <Channels Count="1" DivFreq="1" Mask="1" flAsynchr="False" Type="tcFPM">
+        <Channel Tag="FMode" Amp="1" Div="1" Lab=""/>
+      </Channels> 
+	  <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcReo">
+        <Channel Tag="Reo" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo2" Amp="1000" Div="1000" Lab="mOm"/>
+        <Channel Tag="Reo3" Amp="1000" Div="1000" Lab="mOm"/>
+      </Channels>
+      <Channels Count="3" DivFreq="32" Mask="2" flAsynchr="False" Type="tcAxs">
+        <Channel Tag="Move" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveY" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZ" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+	  <Channels Count="3" DivFreq="20" Mask="4" flAsynchr="True" Type="tcAxsExt">
+        <Channel Tag="MoveXExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveYExt" Amp="1000" Div="1000" Lab="mg"/>
+        <Channel Tag="MoveZExt" Amp="1000" Div="1000" Lab="mg"/>
+      </Channels>
+    </Freq>
+  </Unpack>
+  
+</Settings>
